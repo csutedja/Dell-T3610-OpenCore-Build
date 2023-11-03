@@ -14,7 +14,7 @@ Before you proceed:
 What works:
 - GPU acceleration (I use a PowerColor AMD RX 550 which is not natively supported, I will provide a .ssdt file to get that working if you have that card)
 - App Store
-- iMessage/FaceTime (requires generated SMBIOS; if you are unlucky like me you will have to call Apple to approve your serial number)
+- iMessage/FaceTime (requires generated iMacPro1,1 SMBIOS)
 - Ethernet
 - WiFi (will vary depending on your dongle/wireless card)
 - Sound (built-in speaker and through GPU)
