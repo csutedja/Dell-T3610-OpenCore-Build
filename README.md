@@ -4,7 +4,7 @@ Guide on how to get up to macOS Big Sur almost fully working on a Dell Precision
 Before you proceed:
 
 
-⚠ WARNING! Most likely, you cannot and will never be to run macOS Monterey or higher (12.0+) on this machine. This is essentially because the T3610 motherboard lacks the ability to perform a TSC reset, <a href="https://github.com/acidanthera/CpuTscSync#cputscsync">and the CPU also lacks a certain register needed on Monterey</a>.
+⚠ WARNING! Most likely, you cannot and will never be to run macOS Monterey or higher (12.0+) on this machine. This is essentially because the T3610 motherboard lacks the ability to perform a TSC reset due to its age, <a href="https://github.com/acidanthera/CpuTscSync#cputscsync">and the CPU also lacks a certain register needed on Monterey</a>.
 
 
 ⚠ This is **not** a pre-made EFI folder, I am instead providing guidance on what files/settings/folder structure to use. This is because kexts/OpenCore update all the time, and I don't want to provide outdated files.  
