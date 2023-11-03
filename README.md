@@ -21,7 +21,8 @@ What works:
 - Bluetooth (through a USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
-- Software Updates 
+- Software Updates
+- CPU Power Management with <a href="https://github.com/Piker-Alpha/ssdtPRGen.sh">ssdtPRGen</a>
 
 What doesn't work:
 - macOS versions past Big Sur (read above)
