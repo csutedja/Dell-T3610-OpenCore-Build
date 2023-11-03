@@ -29,4 +29,14 @@ What doesn't work:
 - Sleep (supposedly works with modded BIOS but I find that too risky personally) 
 - Sidecar (not tested)
 
+BIOS settings (taken from cstrouse's guide):
+- Reset to optimized defaults
+- Secure Boot disabled
+- Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
+- Disks set to AHCI mode (default is RAID)
+- Fast Boot set to 'thorough'
+- CPU XD support enabled
+- TPM disabled
+- Legacy ROM disabled (required for Quadro but not for Radeon)
+
   
