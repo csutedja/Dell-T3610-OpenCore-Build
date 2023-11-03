@@ -39,4 +39,13 @@ BIOS settings (taken from cstrouse's guide):
 - TPM disabled
 - Legacy ROM disabled (required for Quadro but not for Radeon)
 
+With that out of the way:
+
+Start here, following guides for _Ivy Bridge-E_. 
+
+https://dortania.github.io/OpenCore-Install-Guide/
+
+https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
+
+
   
