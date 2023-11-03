@@ -9,6 +9,7 @@ Before you proceed:
 
 ⚠ This is **not** a pre-made EFI folder, I am instead providing guidance on what files/settings/folder structure to use. This is because kexts/OpenCore update all the time, and I don't want to provide outdated files.  
 
+⚠ Make sure you have the latest BIOS revision installed before proceeding. Windows is required to update. <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4d5hg">(BIOS Revision A19 directly from Dell)</a>
 
 What works:
 - GPU acceleration (I use a PowerColor AMD RX 550 which is not natively supported, I will provide a .ssdt file to get that working if you have that card)
