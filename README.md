@@ -20,6 +20,7 @@ What works:
 - Bluetooth (through a USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
+- Software Updates 
 
 What doesn't work:
 - macOS versions past Big Sur (read above)
