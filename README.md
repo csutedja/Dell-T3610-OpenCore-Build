@@ -17,7 +17,7 @@ What works:
 - iMessage/FaceTime (requires generated iMacPro1,1 SMBIOS)
 - Ethernet
 - WiFi (will vary depending on your dongle/wireless card)
-- Sound (built-in speaker and through GPU)
+- Sound (on-board speaker/GPU/headphone jack/etc.)
 - Bluetooth (through a USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
