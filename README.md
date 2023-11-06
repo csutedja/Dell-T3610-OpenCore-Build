@@ -51,9 +51,13 @@ https://dortania.github.io/OpenCore-Install-Guide/
 
 https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 
--_Note 1: when generating an SMBIOS use **iMacPro1,1**_
-- _Note 2: AppleCpuPmCfgLock and AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily_
-- _Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing_
+- _Note 1: when generating an SMBIOS use **iMacPro1,1**_
+-  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily_
+-  _Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways._
+
+
+
+
 
  
 
