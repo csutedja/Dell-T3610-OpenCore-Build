@@ -69,15 +69,35 @@ Assuming you carefully followed the above guides and instructions, macOS should 
 # Extras 
 The following tips are not needed and are more based on my own experiences and hardware, so if you run in to these situations look at the following:
 
+##### Sleep
+After trying for many months I have concluded that proper sleep/wake is just not possible on this computer. The system will shut the screen off, enter hibernation, and will be unable to wake back up. My partial fix is to make a small script with the _caffeinate_ command that launches at login, which will prevent your system from hibernating, however this could lead to more power usage so use at your own risk.
+
+
+
+##### Brightness Control on Monitor
+I have a 1440p Dell monitor, and I like to control its brightness/contrast with the Lunar app. This is a complete replacement for the Dell Display Manager on Windows. I can map keys to brightness control which can mimic a MacBook style keyboard.
+
+
+
 ##### Wi-Fi Adapter (EP-N8508GS)
 Before I switched to using Ethernet which works out-of-the-box on macOS with the correct kext, I used to use an EDUP EP-N8508GS USB adapter, which is based on a Realtek chipset not natively supported in macOS. The best fix I have found is <a href="https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter">this tool</a> by chris1111. (you will need to disable SIP temporarily as it installs system extensions, if you are uncomfortable with disabling SIP consider using Ethernet or a <a href="https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/pcie.html">natively supported PCIe Wi-Fi card.</a>) You can re-enable SIP after installation however. I believe _RtWlanU.kext_ and _RtWlanU1827.kext_ are also required in /EFI/OC/Kexts and your config.plist. I have linked those kexts in the Extras folder in my repository.
+
+
 
 ##### Bluetoooth
 The T3610 does not ship with any kind of bluetooth. However, I use <a href="https://www.amazon.com/IOGEAR-Bluetooth-Multi-Language-Version-GBU521W6/dp/B007ZT2AXE?th=1" rel="nofollow noreferrer">this inexpensive USB bluetooth adapter</a> (not a refferal link) which works in macOS with no additional setup. This adapter also works great in Windows and Linux. AirDrop/Handoff/AirPods switching between devices/whatever Apple feature work properly with this adapter. For less clutter you can put the adapter in the motherboard's internal USB2 port. (provided you mapped the port properly with USBToolBox)
 
 
+
 ##### AMD RX 550 in macOS
-I have the PowerColor version of this card. With no modification you will not gain graphics acceleration. Assuming it is the only GPU in your system, you should be able to use _RX550-Spoof.aml_ linked in the Extras folder in my repository to spoof the 550 as a supported model (RX 560). If it does not work and you still gain no acceleration (laggy/choppy, no transparency), follow this guide: https://dortania.github.io/Getting-Started-With-ACPI/Universal/spoof.html, using the device ID of an RX 560. Keep in mind some 550s have a vastly different core, so if you continue to not gain any acceleration, you may not be able to use this GPU in macOS due to an incompatibility.
+I have the PowerColor version of this card. With no modification you will not gain any graphics acceleration. Assuming it is the only GPU in your system, you should be able to use _RX550-Spoof.aml_ linked in the Extras folder in my repository to spoof the 550 as a supported model (RX 560). If it does not work and you still gain no acceleration (laggy/choppy, no transparency), follow this guide: https://dortania.github.io/Getting-Started-With-ACPI/Universal/spoof.html, using the device ID of an RX 560. Keep in mind some 550s have a vastly different core, so if you continue to not gain any acceleration, you may not be able to use this GPU in macOS due to an incompatibility.
+
+
+
+##### Triple-boot advice with Linux and Windows
+Coming soon
+
+
 
 
 
