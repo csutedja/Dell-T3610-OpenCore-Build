@@ -38,14 +38,14 @@ What doesn't work:
 **With that out of the way:**
 
 Make sure you have these BIOS settings (taken from cstrouse's OpenCore guide):
-_- Reset to optimized defaults
+- Reset to optimized defaults
 - Secure Boot disabled
 - Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
 - Disks set to AHCI mode (default is RAID)
 - Fast Boot set to 'thorough'
 - CPU XD support enabled
 - TPM disabled
-- Legacy ROM disabled (required for Quadro but not for Radeon)_
+- Legacy ROM disabled (leave on if you have a Quadro, AMD users disable)
 
 
 Start here, following guides for _Ivy Bridge-E_. 
