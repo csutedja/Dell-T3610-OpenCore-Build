@@ -9,7 +9,7 @@ Before you proceed:
 
 ⚠ **Don't** use the EFI folder included, it will not boot. You should use it as a guide for which files should go in which folders.
 
-⚠ Make sure you have the latest BIOS revision installed before proceeding. Windows is required to update. <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4d5hg">(BIOS Revision A19 directly from Dell)</a>
+⚠ Make sure you have the **latest** BIOS revision installed before proceeding. Windows is required to update. <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4d5hg">(BIOS Revision A19 directly from Dell)</a>
 
 What works:
 - GPU acceleration (I use a PowerColor AMD RX 550 which is not natively supported, I will provide a .ssdt file to get that working if you have that card)
