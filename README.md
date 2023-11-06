@@ -1,5 +1,5 @@
 # Dell Precision T3610 OpenCore Build
-In-depth on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
+In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
 
 
 ### Important information
@@ -54,10 +54,10 @@ https://dortania.github.io/OpenCore-Install-Guide/
 
 https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 
-- _Note 1: when generating an SMBIOS use **iMacPro1,1**_
+- Note 1: when generating an SMBIOS use **iMacPro1,1** model
 -  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily_
--  _Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways._
--  _Note 4: as stated in the guide, if you are running Catalina or older make sure the Apple Secure Boot setting is set to **Disabled**_
+-  Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways.
+-  Note 4: as stated in the guide, if you are running Catalina or older make sure the Apple Secure Boot setting is set to **Disabled*
 
 # Post-installation
 Assuming you carefully followed the above guides and instructions, macOS should boot properly. However, there are a few specific post install tips that I highly recommend that I will link below:
