@@ -1,8 +1,8 @@
 # Dell Precision T3610 OpenCore Build
 Guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
 
-Before you proceed:
 
+## Important information
 
 ⚠ **WARNING!** You cannot and will never be to run macOS Monterey or higher (12.0+) on this machine. This is because due to its age, the T3610's motherboard lacks the ability to perform a TSC reset at boot-time, <a href="https://github.com/acidanthera/CpuTscSync#cputscsync">and the CPU also lacks a certain register needed to do this on Monterey</a>. However, Catalina and Big Sur run great on this system.
 
@@ -21,21 +21,15 @@ What works:
 - Bluetooth (w/ USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
-- USB 2.0 ports, mapped with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
 - Big Sur Security Patches/Updates
 - CPU Power Management with <a href="https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management">ssdtPRGen</a>
+- USB 2.0 ports, mapped with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
 
 What doesn't work:
 - macOS versions past Big Sur (read above)
 - Built-in USB 3.0 (use an expansion card if needed)
 - Sleep (supposedly works with modded BIOS but I'm not going to try that) 
 - Sidecar (not tested)
-
-
-
-
-
-**With that out of the way:**
 
 Make sure you have these BIOS settings (taken from cstrouse's OpenCore guide):
 - Reset to optimized defaults
@@ -46,13 +40,20 @@ Make sure you have these BIOS settings (taken from cstrouse's OpenCore guide):
 - CPU XD support enabled
 - TPM disabled
 - Legacy ROM disabled (leave on if you have a Quadro, AMD users disable)
+- USB 3.0 can be kept on for Windows/Linux/etc. but keep in mind it will not work in macOS
 
+
+# Installation
 
 Start here, following guides for _Ivy Bridge-E_. 
 
 https://dortania.github.io/OpenCore-Install-Guide/
 
 https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
+
+_Note 1: when generating an SMBIOS use **iMacPro1,1**_
+_Note 2: AppleCpuPmCfgLock and AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily___
+_Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing_
 
 
   
