@@ -21,26 +21,29 @@ What works:
 - Bluetooth (w/ USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
+- USB 2.0 ports with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
 - Big Sur Security Patches/Updates
 - CPU Power Management with <a href="https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management">ssdtPRGen</a>
 
 What doesn't work:
 - macOS versions past Big Sur (read above)
 - Built-in USB 3.0 (use an expansion card if needed)
-- Sleep (supposedly works with modded BIOS but I find that too risky personally) 
+- Sleep (supposedly works with modded BIOS but I'm not going to try that) 
 - Sidecar (not tested)
 
-BIOS settings (taken from cstrouse's guide):
-- Reset to optimized defaults
+
+With that out of the way:
+
+Make sure you have these BIOS settings (taken from cstrouse's OpenCore guide):
+_- Reset to optimized defaults
 - Secure Boot disabled
 - Enable VT for Direct I/O disabled (Virtualization Support can be enabled if you need it for Docker, etc)
 - Disks set to AHCI mode (default is RAID)
 - Fast Boot set to 'thorough'
 - CPU XD support enabled
 - TPM disabled
-- Legacy ROM disabled (required for Quadro but not for Radeon)
+- Legacy ROM disabled (required for Quadro but not for Radeon)_
 
-With that out of the way:
 
 Start here, following guides for _Ivy Bridge-E_. 
 
