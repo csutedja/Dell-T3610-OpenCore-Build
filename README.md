@@ -54,6 +54,16 @@ https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 - _Note 1: when generating an SMBIOS use **iMacPro1,1**_
 -  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily_
 -  _Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways._
+-  _Note 4: as stated in the guide, if you are running Catalina or older make sure the Apple Secure Boot setting is set to **Disabled**_
+
+# Post-installation
+Assuming you carefully followed the above guides and instructions, macOS should boot properly. However, there are a few specific post install tips that I highly recommend that I will link below:
+
+- https://dortania.github.io/OpenCore-Post-Install/#universal (all of these guides are highly recommended but the sleep fix will probably not work. you can try it though)
+- https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html (also highly recommended, drastically cleans up the boot process
+- https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html
+- 
+
 
 
 
