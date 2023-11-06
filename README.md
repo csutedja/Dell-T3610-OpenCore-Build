@@ -67,7 +67,7 @@ Assuming you carefully followed the above guides and instructions, macOS should 
 - https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-opencore-s-gui (not needed, just provides a nice boot menu)
 
 # Extras 
-The following tips are not needed and are more based on my own experiences and hardware, so if you run in to these situations look at the following:
+some rambly tips and tricks based on hardware/software complications I've experienced
 
 ##### Sleep
 After trying for many months I have concluded that proper sleep/wake is just not possible on this computer. The system will shut the screen off, enter hibernation, and will be unable to wake back up. My partial fix is to make a small script with the _caffeinate_ command that launches at login, which will prevent your system from hibernating, however this could lead to more power usage so use at your own risk.
@@ -99,7 +99,7 @@ After following the guide for ssdtPRGen linked below, I like managing power usag
 
 
 ##### Triple-boot advice with Linux and Windows
-I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and macOS. Each OS is in its own SSD. You can install any of these OSes in any order. Windows can be installed normally (with a TPM bypass if running Win11) for the most part, and it should show up in your OpenCore boot picker. For Linux, you will need to put OpenLinuxBoot.efi and ext4_x64.efi (second one is optional) in /EFI/OC/Drivers and your config.plist for proper support. If you install a systemd-boot based flavor such as Pop, it should just show in the boot picker. However, grub based flavors such as Mint may override your OpenCore configuration, rendering it completely unbootable. To get around this, make sure to always keep a copy of your EFI on a flash drive handy, and once you have installed Linux, if you cannot boot OC, copy your known-good EFI folder onto your hard drive again, replacing all files.
+I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and macOS. Each OS is in its own SSD. You can install any of these OSes in any order. Windows can be installed normally (with a TPM bypass if running Win11) for the most part, and it should show up in your OpenCore boot picker. For Linux, you will need to put OpenLinuxBoot.efi and ext4_x64.efi (second one is optional) in /EFI/OC/Drivers and your config.plist for proper support. If you install a systemd-boot based flavor such as Pop, it will likely not affect OC, and Linux should just show in the boot picker. However, grub based flavors such as Mint are more likely override your OpenCore configuration in my experience (even when installing to a different EFI parition from OC!), rendering it completely unbootable. To get around this, make sure to always keep a copy of your EFI on a flash drive handy, and once you have installed Linux, if you cannot boot OC, copy your known-good EFI folder onto your hard drive again, replacing all files.
 
 
 
