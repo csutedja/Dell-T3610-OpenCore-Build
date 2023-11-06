@@ -99,7 +99,7 @@ After following the guide for ssdtPRGen linked below, I like managing power usag
 
 
 ##### Triple-boot advice with Linux and Windows
-Coming soon
+I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and macOS. Each OS is in its own SSD. You can install any of these OSes in any order. Windows can be installed normally (with a TPM bypass if running Win11) for the most part, and it should show up in your OpenCore boot picker. For Linux, you will need to put OpenLinuxBoot.efi and ext4_x64.efi (second one is optional) in /EFI/OC/Drivers and your config.plist for proper support. If you install a systemd-boot based flavor such as Pop, it should just show in the boot picker. However, grub based flavors such as Mint may override your OpenCore configuration, rendering it completely unbootable. To get around this, make sure to always keep a copy of your EFI on a flash drive handy, and once you have installed Linux, if you cannot boot OC, copy your known-good EFI folder onto your hard drive again, replacing all files.
 
 
 
