@@ -7,9 +7,9 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 ⚠ **WARNING!** You cannot run macOS Monterey or higher (12.0+) on this machine. This is because due to its age, the T3610's motherboard lacks the ability to perform a TSC reset at boot-time, <a href="https://github.com/acidanthera/CpuTscSync#cputscsync">and the CPU also lacks a certain register needed to do this on Monterey</a>. However, Catalina and Big Sur run great on this system.
 
 
-⚠ **Don't** use the EFI folder included, it will not boot. You should use it as a guide for which files should go in which folders.
+⚠ **Do not** use the EFI folder included, it will not boot. You should use it as a guide for which files should go in which folders.
 
-⚠ Make sure you have the **latest** BIOS revision installed before proceeding. Windows is required to update. <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4d5hg">(BIOS Revision A19 directly from Dell)</a>
+⚠ Make sure you have the latest BIOS revision installed before proceeding. Windows is required to update. <a href="https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=4d5hg">(BIOS Revision A19 directly from Dell)</a>
 
 ⚠ This guide is for macOS Catalina and Big Sur. However, macOS High Sierra/Mojave probably work (anything lower was never supported by the iMac Pro), I just haven't tested it. 
 
