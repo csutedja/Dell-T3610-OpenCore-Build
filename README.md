@@ -21,7 +21,7 @@ What works:
 - Bluetooth (w/ USB dongle)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
-- USB 2.0 ports with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
+- USB 2.0 ports, mapped with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
 - Big Sur Security Patches/Updates
 - CPU Power Management with <a href="https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management">ssdtPRGen</a>
 
@@ -32,7 +32,10 @@ What doesn't work:
 - Sidecar (not tested)
 
 
-With that out of the way:
+
+
+
+**With that out of the way:**
 
 Make sure you have these BIOS settings (taken from cstrouse's OpenCore guide):
 _- Reset to optimized defaults
