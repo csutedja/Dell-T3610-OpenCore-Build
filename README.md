@@ -15,13 +15,13 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 
 
 ##### What works:
-- GPU acceleration (I use a PowerColor RX 550 with no official macOS support, you will have to use the .ssdt in the Extras folder in my repository to gain acceleration if you have this card)
+- GPU acceleration (I use a PowerColor RX 550 with no official Mac support, read in the Extras section for a fix.)
 - App Store
 - iMessage/FaceTime (requires generated iMacPro1,1 SMBIOS)
 - Ethernet
 - WiFi (will vary depending on your dongle/wireless card)
 - Sound (on-board audio/GPU out)
-- Bluetooth (w/ USB dongle)
+- Bluetooth (I linked a compatible adapter below)
 - DRM (AppleTV/Netflix/etc.)
 - 4k display
 - Big Sur Security Patches/Updates
