@@ -2,7 +2,7 @@
 Guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
 
 
-## Important information
+### Important information
 
 ⚠ **WARNING!** You cannot and will never be to run macOS Monterey or higher (12.0+) on this machine. This is because due to its age, the T3610's motherboard lacks the ability to perform a TSC reset at boot-time, <a href="https://github.com/acidanthera/CpuTscSync#cputscsync">and the CPU also lacks a certain register needed to do this on Monterey</a>. However, Catalina and Big Sur run great on this system.
 
