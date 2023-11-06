@@ -1,5 +1,5 @@
 # Dell Precision T3610 OpenCore Build
-In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
+In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. _(Last updated 11/06/2023)_
 
 
 ### Important information
@@ -108,7 +108,8 @@ I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and ma
 
 
 
- 
+# Thank you for reading!
+If this guide helped you, be sure to share it to other people who would benefit from it. If you have a suggestion/question/etc. make an issue and I'll answer it if possible.
 
 
   
