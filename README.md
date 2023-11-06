@@ -19,7 +19,7 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 - App Store
 - iMessage/FaceTime (requires generated iMacPro1,1 SMBIOS)
 - Ethernet
-- WiFi (will vary depending on your dongle/wireless card)
+- WiFi (depends on adapter/card, read more <a href="https://dortania.github.io/Wireless-Buyers-Guide/">here</a>)
 - Sound (on-board audio/GPU out)
 - Bluetooth (I linked a compatible adapter below)
 - DRM (AppleTV/Netflix/etc.)
@@ -30,7 +30,7 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 
 ##### What doesn't work:
 - macOS versions past Big Sur (read above)
-- Built-in USB 3.0 (use an expansion card if needed)
+- Built-in USB 3.0 (supposedly the Inateck PCIe card works if you need those ports)
 - Sleep (supposedly works with modded BIOS but I'm not going to try that) 
 - Sidecar (not tested)
 
