@@ -76,6 +76,8 @@ Before I switched to using Ethernet which works out-of-the-box on macOS with the
 The T3610 does not ship with any kind of bluetooth. However, I use <a href="https://www.amazon.com/IOGEAR-Bluetooth-Multi-Language-Version-GBU521W6/dp/B007ZT2AXE?th=1" rel="nofollow noreferrer">this inexpensive USB bluetooth adapter</a> (not a refferal link) which works in macOS with no additional setup. This adapter also works great in Windows and Linux. AirDrop/Handoff/AirPods switching between devices/whatever Apple feature work properly with this adapter. For less clutter you can put the adapter in the motherboard's internal USB2 port. (provided you mapped the port properly with USBToolBox)
 
 
+##### AMD RX 550 in macOS
+I have the PowerColor version of this card. With no modification you will not gain graphics acceleration. Assuming it is the only GPU in your system, you should be able to use _RX550-Spoof.aml_ linked in the Extras folder in my repository to spoof the 550 as a supported model (RX 560). If it does not work and you still gain no acceleration (laggy/choppy, no transparency), follow this guide: https://dortania.github.io/Getting-Started-With-ACPI/Universal/spoof.html, using the device ID of an RX 560. Keep in mind some 550s have a vastly different core, so if you continue to not gain any acceleration, you may not be able to use this GPU in macOS due to an incompatibility.
 
 
 
