@@ -94,6 +94,10 @@ I have the PowerColor version of this card. With no modification you will not ga
 
 
 
+##### Extra Power-Management tips
+After following the guide for ssdtPRGen linked below, I like managing power usage stats with Intel Power Gadget, which is a very lightweight usage graph program. It's no longer available for download but it is archived: https://web.archive.org/web/20220701164200/https://www.intel.com/content/dam/develop/external/us/en/documents/downloads/intel-power-gadget.dmg
+
+
 ##### Triple-boot advice with Linux and Windows
 Coming soon
 
