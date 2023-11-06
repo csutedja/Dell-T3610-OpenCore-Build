@@ -1,5 +1,5 @@
 # Dell Precision T3610 OpenCore Build
-Guide on how to get up to macOS Big Sur almost fully working on a Dell Precision T3610 workstation. 
+Guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. 
 
 Before you proceed:
 
