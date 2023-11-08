@@ -26,7 +26,7 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 - 4k display
 - Big Sur Security Patches/Updates
 - CPU Power Management with <a href="https://dortania.github.io/OpenCore-Post-Install/universal/pm.html#sandy-and-ivy-bridge-power-management">ssdtPRGen</a>
-- USB 2.0 ports, mapped with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> 
+- USB 2.0 ports, mapped with <a href="https://github.com/USBToolBox/tool">USBToolBox</a> (I've included a pre-made USB Map in the Extras folder of this repo that might work, if it doesn't map manually)
 
 ##### What doesn't work:
 - macOS versions past Big Sur (read above)
