@@ -50,7 +50,7 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 
 Start here, following guides for _Ivy Bridge-E_. 
 
-https://dortania.github.io/OpenCore-Install-Guide/
+https://dortania.github.io/OpenCore-Install-Guide/ 
 
 https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 
@@ -58,6 +58,7 @@ https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 -  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable CFG-Lock it on the T3610 easily_
 -  Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways and keeping this quirk on will break macOS 11.3+ booting
 -  Note 4: as stated in the guide, if you are running Catalina or older make sure the Apple Secure Boot setting is set to **Disabled*
+-  Note 5: When gathering kexts you **MUST** get CpuTscSync for succesful booting
 
 # Post-installation
 Assuming you carefully followed the above guides and instructions, macOS should boot properly. However, there are a few specific post install tips that I highly recommend that I will link below:
