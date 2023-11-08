@@ -115,7 +115,7 @@ I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and ma
 - _Dortania for the excellent OC Install Guide_
 - _cstrouse for the T3610 guide on which I based this off of_
 - _chris1111 for the WiFi adapter kexts_
-- Everyone that helped make these tools
+- Everyone that has contributed to the Hackintosh community
 
 
 # Thank you for reading!
