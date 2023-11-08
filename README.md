@@ -15,7 +15,7 @@ In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision
 
 
 ##### What works:
-- GPU acceleration (I use a PowerColor RX 550 with no official Mac support, read in the Extras section for a fix.)
+- Metal GPU (RX 550 users can see Extras section for a potential fix)
 - App Store
 - iMessage/FaceTime (requires generated iMacPro1,1 SMBIOS)
 - Ethernet
@@ -55,8 +55,8 @@ https://dortania.github.io/OpenCore-Install-Guide/
 https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.html
 
 - Note 1: when generating an SMBIOS use **iMacPro1,1** model
--  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable it on the T3610 easily_
--  Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways.
+-  _Note 2: AppleCpuPmCfgLock **and** AppleXcpmCfgLock **must** be enabled for your system to boot, as you cannot disable CFG-Lock it on the T3610 easily_
+-  Note 3: make sure **XhciPortLimit** is disabled, your ports should be mapped before installing anyways and keeping this quirk on will break macOS 11.3+ booting
 -  Note 4: as stated in the guide, if you are running Catalina or older make sure the Apple Secure Boot setting is set to **Disabled*
 
 # Post-installation
@@ -74,8 +74,8 @@ After trying for many months I have concluded that proper sleep/wake is just not
 
 
 
-##### Brightness Control on Monitor
-I have a 1440p Dell monitor, and I like to control its brightness/contrast with the Lunar app. This is a complete replacement for the Dell Display Manager on Windows. I can map keys to brightness control which can mimic a MacBook style keyboard.
+##### Brightness Control on Dell Monitor
+I have a 1440p Dell U2518D monitor hooked up with DisplayPort, and I like to control its brightness/contrast with the Lunar app. This is a complete replacement for the Dell Display Manager on Windows. I can map keys to brightness control which can mimic a MacBook style keyboard.
 
 
 
@@ -84,8 +84,15 @@ Before I switched to using Ethernet which works out-of-the-box on macOS with the
 
 
 
+##### iServices (FaceTime/iMessage)
+After following the guides linked in the Post-Install section, if you got everything to work all features like Facetime calling from iPhone, iMessage/SMS will work. However, if you are like me and your machine is unable to connect, call Apple's iMessage support number and explain to them that you have an iMac Pro that can't connect to iMessage. Most likely they will then allow your machine. I've heard that having purchase history on your Apple ID also helps.
+
+
+
+
+
 ##### Bluetoooth
-The T3610 does not ship with any kind of bluetooth. However, I use <a href="https://www.amazon.com/IOGEAR-Bluetooth-Multi-Language-Version-GBU521W6/dp/B007ZT2AXE?th=1" rel="nofollow noreferrer">this inexpensive USB bluetooth adapter</a> (not a refferal link) which works in macOS with no additional setup. This adapter also works great in Windows and Linux. AirDrop/Handoff/AirPods switching between devices/whatever Apple feature work properly with this adapter. For less clutter you can put the adapter in the motherboard's internal USB2 port. (provided you mapped the port properly with USBToolBox)
+The T3610 does not ship with any kind of bluetooth. However, I use <a href="https://www.amazon.com/IOGEAR-Bluetooth-Multi-Language-Version-GBU521W6/dp/B007ZT2AXE?th=1" rel="nofollow noreferrer">this inexpensive USB bluetooth adapter</a> which works in macOS with no additional setup. This adapter also works great in Windows and Linux. AirDrop/Handoff/AirPods switching between devices/whatever Apple feature work properly with this adapter. For less clutter you can put the adapter in the motherboard's internal USB2 port. (provided you mapped the port properly with USBToolBox)
 
 
 
@@ -99,13 +106,16 @@ After following the guide for ssdtPRGen linked below, I like managing power usag
 
 
 ##### Triple-boot advice with Linux and Windows
-I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and macOS. Each OS is in its own SSD. You can install any of these OSes in any order. Windows can be installed normally (with a TPM bypass if running Win11) for the most part, and it should show up in your OpenCore boot picker. For Linux, you will need to put OpenLinuxBoot.efi and ext4_x64.efi (second one is optional) in /EFI/OC/Drivers and your config.plist for proper support. If you install a systemd-boot based flavor such as Pop, it will likely not affect OC, and Linux should just show in the boot picker. However, grub based flavors such as Mint are more likely override your OpenCore configuration in my experience (even when installing to a different EFI parition from OC!), rendering it completely unbootable. To get around this, make sure to always keep a copy of your EFI on a flash drive handy, and once you have installed Linux, if you cannot boot OC, copy your known-good EFI folder onto your hard drive again, replacing all files.
+I run a triple-boot setup with Windows 11, Linux Mint (formerly Pop!_OS), and macOS. Each OS is in its own SSD. You can install any of these OSes in any order. Windows can be installed normally (with a TPM bypass if running Win11) for the most part, and it should show up in your OpenCore boot picker. For Linux, you will need to put OpenLinuxBoot.efi (included in the OpenCore zip file) in /EFI/OC/Drivers and your config.plist for proper support. If you install a systemd-boot based flavor such as Pop, it will likely not affect OC, and Linux should just show in the boot picker. However, grub based flavors such as Mint are more likely override your OpenCore configuration in my experience (even when installing to a different EFI parition from OC!), rendering it completely unbootable. To get around this, make sure to always keep a copy of your EFI on a flash drive handy, and once you have installed Linux, if you cannot boot OC, copy your known-good EFI folder onto your hard drive again, replacing all files.
 
 
-
-
-
-
+# Credits
+- _Apple for macOS_
+- _Acidanthera for OpenCore_
+- _Dortania for the excellent OC Install Guide_
+- _cstrouse for the T3610 guide on which I based this off of_
+- _chris1111 for the WiFi adapter kexts_
+- Everyone that helped make these tools
 
 
 # Thank you for reading!
