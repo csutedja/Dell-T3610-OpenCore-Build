@@ -1,3 +1,7 @@
+# WARNING
+It's been a long time since I've experimented with hackintoshing, and I haven't used this PC in a while, so don't expect any updates for modern macOS. I *think* it should still be fine if you want to run old macOS but it's probably not a very good idea nowadays....
+
+
 # Dell Precision T3610 OpenCore Build
 In-depth guide on how to get macOS versions 10.15/11 running on a Dell Precision T3610 workstation. _(Last updated 11/06/2023)_
 
